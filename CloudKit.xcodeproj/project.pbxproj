@@ -91,13 +91,13 @@
 				5685842E19EB88DA00D1108D /* CloudKitHelper.swift */,
 				566BA8AA19EA3C7B0017E612 /* CloudKit.entitlements */,
 				566BA88A19EA3C690017E612 /* AppDelegate.swift */,
+				56FA9A6419EE287500776697 /* Todos.swift */,
 				566BA88C19EA3C690017E612 /* ViewController.swift */,
+				56FA9A6219EE189200776697 /* CloudKitTableViewController.swift */,
 				566BA88E19EA3C690017E612 /* Main.storyboard */,
 				566BA89119EA3C690017E612 /* Images.xcassets */,
 				566BA89319EA3C690017E612 /* LaunchScreen.xib */,
 				566BA88819EA3C690017E612 /* Supporting Files */,
-				56FA9A6219EE189200776697 /* CloudKitTableViewController.swift */,
-				56FA9A6419EE287500776697 /* Todos.swift */,
 			);
 			path = CloudKit;
 			sourceTree = "<group>";
@@ -176,7 +176,7 @@
 				TargetAttributes = {
 					566BA88419EA3C690017E612 = {
 						CreatedOnToolsVersion = 6.0.1;
-						DevelopmentTeam = 2ZSEKXAT7V;
+						DevelopmentTeam = G2F7KTUB43;
 						SystemCapabilities = {
 							com.apple.iCloud = {
 								enabled = 1;
@@ -185,6 +185,7 @@
 					};
 					566BA89919EA3C690017E612 = {
 						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = G2F7KTUB43;
 						TestTargetID = 566BA88419EA3C690017E612;
 					};
 				};

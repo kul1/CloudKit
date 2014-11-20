@@ -35,6 +35,8 @@ class CloudKitHelper {
     func saveRecord(todo : NSString) {
         let todoRecord = CKRecord(recordType: "Todos")
         todoRecord.setValue(todo, forKey: "todotext")
+//////////////////
+//        
 //        let ops = CKModifyRecordsOperation(recordsToSave: [todoRecord], recordIDsToDelete: nil)
 //        ops.savePolicy = CKRecordSavePolicy.AllKeys
 //        
@@ -43,7 +45,7 @@ class CloudKitHelper {
 //            NSLog("===")
 //            for it in savedRecords{
 //                let r = it as CKRecord
-//                let tmp = r.objectForKey("todotext")
+//                let tmp: AnyObject! = r.objectForKey("todotext")
 //                NSLog("XXXXX : \(tmp)")
 //            }
 //            NSLog("===")
@@ -75,10 +77,14 @@ class CloudKitHelper {
 //            }
 //        }
 //        publicDB.addOperation(ops)
+        
+///////////////////
 
         publicDB.saveRecord(todoRecord, completionHandler: { (record, error) -> Void in
             NSLog("Before saving in cloud kit : \(self.todos.count)")
             NSLog("Saved in cloudkit")
+            println("Saved in cloudkit")
+//print
             self.fetchTodos(record)
         })
 
